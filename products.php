@@ -72,7 +72,7 @@ $result = mysqli_query($conn, $sql);
                     <h6 class="mt-auto mb-2 fw-bold">$<?php echo $row['price']; ?></h6>
                     <div class="d-grid gap-2">
                        <a href="<?php echo 'product.php?id=' . $row['id1']; ?>" class="btn btn-success btn-sm">View Details</a>
- <form method="POST" action="cart.php">
+<form method="POST" action="add_to_cart.php">
                 <input type="hidden" name="product_id" value="<?php echo $row['id1']; ?>">
                 
                 <input type="number" name="qty" value="1" min="1" class="form-control mb-2" style="width:70px;">
